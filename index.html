@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vue Single File Components</title>
+    <link rel="stylesheet" href="./src/assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- Your global component template is rendered here -->
+      <tweet-component
+        v-for="tweet in tweets"
+        :key="tweet.id"
+        :tweet="tweet"
+        @add="addTweetMessage($event)"
+      >
+      </tweet-component>
+    </div>
+    <script type="module" src="./dist/app.js"></script>
+  </body>
+</html>
