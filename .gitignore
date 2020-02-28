@@ -3,3 +3,4 @@ node_modules
 src/components/Notification.vue
 src/app-notification.js
 index-notification.html
+/archive

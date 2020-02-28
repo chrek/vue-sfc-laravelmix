@@ -3,7 +3,8 @@
     <div class="content">
       <p>
         <strong>{{ tweet.name }}</strong>
-        <small>{{ tweet.handle }}</small>
+        <!-- <small>{{ tweet.handle }}</small> -->
+        <small v-text="tweet.handle"></small>
         <br />
         {{ tweet.tweet }}
       </p>

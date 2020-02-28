@@ -167,6 +167,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ["tweet"]
 });
@@ -727,7 +728,7 @@ var render = function() {
       _c("p", [
         _c("strong", [_vm._v(_vm._s(_vm.tweet.name))]),
         _vm._v(" "),
-        _c("small", [_vm._v(_vm._s(_vm.tweet.handle))]),
+        _c("small", { domProps: { textContent: _vm._s(_vm.tweet.handle) } }),
         _vm._v(" "),
         _c("br"),
         _vm._v("\n      " + _vm._s(_vm.tweet.tweet) + "\n    ")
